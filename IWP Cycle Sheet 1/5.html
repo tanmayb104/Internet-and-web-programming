@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<!--Tanmay Bansal(19BCE0421)-->
+<!--Cycle Sheet 1-->
+<html>
+  <style>
+    body {
+      width: 60%;
+      background-color: white;
+      margin: auto;
+    }
+    .form {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+    .left {
+      margin-right: 10px;
+      width: auto;
+      text-align: right;
+    }
+    .right {
+      width: auto;
+      text-align: left;
+    }
+  </style>
+  <body>
+    <div style="text-align: center; background-color:lightgray;"><h2>The World of Fruit</h2></div>
+    <div style="text-align: center"><h2>Fruit Survey</h2></div>
+    <form>
+      <div class="form">
+        <div class="left">
+          <p>Name</p>
+          <p>Address</p>
+          <p>Email</p>
+          <p style="padding-top: 10px">
+            How many pieces of fruit do you eat per day?
+          </p>
+          <br /><br />
+          <p style="padding-top: 8px">My favourite fruit</p>
+          <br />
+          <br />
+          <p style="padding-top: 8px">Would you like a brochure?</p>
+        </div>
+        <div class="right">
+          <p><input type="text" /></p>
+          <p><input type="text" /></p>
+          <p><input type="email" /></p>
+ 
+          <input type="radio" id="0" name="0" value="0" />
+          <label for="male">0</label><br />
+          <input type="radio" id="1" name="0" value="1" />
+          <label for="male">1</label><br />
+          <input type="radio" id="2" name="0" value="2" />
+          <label for="male">2</label><br />
+          <input type="radio" id="more" name="0" value="more" />
+          <label for="male">More than 2</label><br />
+          <br />
+          <select id="cars" name="cars" size="4" multiple>
+            <option value="volvo">Apple</option>
+            <option value="saab">Banana</option>
+            <option value="fiat">Plum</option>
+            <option value="audi">Pomegranate</option>
+          </select>
+          <br /><br />
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          <br /><br />
+          <input type="submit" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

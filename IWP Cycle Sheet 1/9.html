@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<!--Tanmay Bansal(19BCE0421)-->
+<!--Cycle Sheet 1-->
+<html>
+        <body>
+ 
+                <p>Image to use:</p>
+                <img id="scream" src="happy.jpeg" alt="The Scream" width="600" height="250">
+ 
+                <p>Canvas to fill:</p>
+                <canvas id="myCanvas" width="600" height="250"
+                style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML canvas tag.</canvas>
+ 
+                <p><button onclick="myCanvas()">Try it</button></p>
+ 
+                <script>
+                        function myCanvas() {
+                        var c = document.getElementById("myCanvas");
+                        var ctx = c.getContext("2d");
+                        var img = document.getElementById("scream");
+                        ctx.drawImage(img,0,0,600,250);
+                        }
+                </script>
+ 
+                <h1>The video element</h1>
+ 
+                <video width="320" height="240" controls>
+                <source src="ocean.mov" type="video/mp4">
+                <source src="ocean.mov" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+ 
+        </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<!--Tanmay Bansal(19BCE0421)-->
+<!--Cycle Sheet 1-->
+<html>
+        <body>
+ 
+                <h2>Image Maps</h2>
+                <p>Click on the field positions:</p>
+ 
+                <img src="field.png" alt="Field" usemap="#fieldmap" width="400" height="379" style="float: left;">
+ 
+                <map name="fieldmap">
+                        <area target="" alt="Wicket-Keeper" title="Wicket-Keeper" onclick="position(1)" coords="205,100,13" shape="circle">
+                        <area target="" alt="Square-leg" title="Square-leg" onclick="position(2)" coords="301,146,14" shape="circle">
+                        <area target="" alt="Mid-wicket" title="Mid-wicket" onclick="position(9)" coords="308,247,14" shape="circle">
+                        <area target="" alt="Bowler" title="Bowler" onclick="position(7)" coords="195,299,14" shape="circle">
+                        <area target="" alt="Long-on" title="Long-on" onclick="position(3)" coords="309,346,14" shape="circle">
+                        <area target="" alt="Long-off" title="Long-off" onclick="position(6)" coords="135,374,15" shape="circle">
+                        <area target="" alt="Cover" title="Cover" onclick="position(5)" coords="131,208,14" shape="circle">
+                        <area target="" alt="Deep-Cover" title="Deep-Cover" onclick="position(8)" coords="16,216,13" shape="circle">
+                        <area target="" alt="Point" title="Point" onclick="position(4)" coords="88,154,14" shape="circle">
+                        <area target="" alt="Third-man" title="Third-man" onclick="position(11)" coords="77,59,14" shape="circle">
+                        <area target="" alt="Deep fine leg" title="Deep fine leg" onclick="position(10)" coords="319,58,15" shape="circle">
+                </map>
+ 
+                <div id="description">
+ 
+                </div>
+ 
+                <script>
+                        function position(x){
+                                if(x==1){
+                                        var a = "Mahendra Singh Dhoni ";
+                                        var b = "Mahendra Singh Dhoni (born 7 July 1981), commonly known as M. S. Dhoni and *Mahi*, is a cricket player and was the former captain of the Indian cricket team. Dhoni is a right-handed batsman."
+                                        document.getElementById('description').innerHTML = a+"<br>"+b;
+                                }
+                                else if(x==2){
+                                        var a = "Suresh Raina";
+                                        var b = "Suresh Kumar Raina (born 27 November 1986) is an Indian professional cricketer. An aggressive left-handed middle-order batsman and an occasional off-spin bowler, he is considered as one of the best fielders in world cricket."
+                                        document.getElementById('description').innerHTML = a+"<br>"+b;
+                                }
+                                else if(x==9){
+                                        var a = "Ravindra Jadeja";
+                                        var b = "Ravindra Jadeja, is an Indian international cricketer. He is an all-rounder, who plays as a left-handed middle-order batsman and slow left-arm orthodox bowler."
+                                        document.getElementById('description').innerHTML = a+"<br>"+b;
+                                }
+                                else if(x==7){
+                                        var a = "Jasprit Bumrah";
+                                        var b = "Jasprit Jasbirsingh Bumrah (born 6 December 1993) is an Indian international cricketer, who plays for the Indian national cricket team in all formats of the game."
+                                        document.getElementById('description').innerHTML = a+"<br>"+b;
+                                }
+                                else if(x==3){
+                                        var a = "Virat Kohli";
+                                        var b = "Virat Kohli (born 5 November 1988) is an Indian cricketer and the current captain of the India national team. A right-handed top-order batsman, Kohli is regarded as one of the best contemporary batsmen in the world."
+                                        document.getElementById('description').innerHTML = a+"<br>"+b;
+                                }
+                                else if(x==6){
+                                        var a = "AB de Villiers";
+                                        var b = "Abraham Benjamin 'AB' de Villiers (born 17 February 1984) is a South African cricketer. Widely regarded as one of the finest batsmen of all time, he was named as the ICC ODI Player of the Year three times during his 15-year international career and was one of the five Wisden cricketers of the decade at the end of 2019."
+                                        document.getElementById('description').innerHTML = a+"<br>"+b;
+                                }
+                                else if(x==5){
+                                        var a = "Rohit Sharma";
+                                        var b = "Rohit Gurunath Sharma (born 30 April 1987) is an Indian international cricketer who plays for Mumbai in domestic cricket and captains Mumbai Indians in the Indian Premier League as a right-handed batsman and an occasional right-arm off break bowler."
+                                        document.getElementById('description').innerHTML = a+"<br>"+b;
+                                }
+                                else if(x==8){
+                                        var a = "Shikhar Dhawan";
+                                        var b = "Shikhar Dhawan (born 5 December 1985) is an Indian international cricketer. A left-handed opening batsman and an occasional right-arm off break bowler, he plays for Delhi in first-class cricket and Delhi Capitals in the IPL"
+                                        document.getElementById('description').innerHTML = a+"<br>"+b;
+                                }
+                                else if(x==4){
+                                        var a = "KL Rahul";
+                                        var b = "KL Rahul is a right-handed batsman and a wicket-keeper. Rahul made his international debut in 2014 and scored his maiden Test century in his second Test match."
+                                        document.getElementById('description').innerHTML = a+"<br>"+b;
+                                }
+                                else if(x==11){
+                                        var a = "Shreyas Iyer";
+                                        var b = "Shreyas Santosh Iyer (born 6 December 1994) is an Indian cricketer, who plays for India in international cricket, Mumbai in domestic cricket and captaining Delhi Capitals in the Indian Premier League."
+                                        document.getElementById('description').innerHTML = a+"<br>"+b;
+                                }
+                                else if(x==10){
+                                        var a = "Suryakumar yadav";
+                                        var b = "Suryakumar Ashok Yadav (born 14 September 1990) is an Indian cricketer who plays for Mumbai in domestic cricket and for Mumbai Indians in IPL."
+                                        document.getElementById('description').innerHTML = a+"<br>"+b;
+                                }
+                        }
+                </script>
+ 
+        </body>
+</html>
