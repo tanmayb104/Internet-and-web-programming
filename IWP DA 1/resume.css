@@ -82,6 +82,7 @@ body hr{
 
 .top-right{
     width: 50%;
+    margin-right: 100px;
 }
 
 .top-right h1{
@@ -124,12 +125,13 @@ body hr{
 }
 
 .block{
-    display: inline-block;
     width: 33%;
     float: left;
     padding: auto;
     align-items: center;
     margin: auto;
+    height: 170px;
+    overflow: auto;
 }
 
 .Projects{
@@ -164,6 +166,15 @@ img{
     color: #FFDF00;
 }
 
+#Education:hover{
+    color: #FFDF00;
+}
+
+#center{
+    border-left: 2px solid black;
+    height: 180px;
+    border-right: 2px solid black;
+}
 
 @media only screen and (max-width: 800px) {
     .block{
@@ -185,5 +196,11 @@ img{
     }
     .Education{
         margin:auto;
+    }
+    #center{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 0px;
+        border-right: 0px;
     }
 }
